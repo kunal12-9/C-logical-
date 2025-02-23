@@ -1,0 +1,1180 @@
+                       //NO RETURN AND ARGUMENT*/
+#include<stdio.h>
+void add(int a,int b);
+void Sub(int a,int b);
+ void divid(int a,int b);
+void multi(int a,int b);
+ void mod(int a,int b);
+ 
+int main(){
+ add(12,4);
+ Sub(15,3);
+ divid(8,2);
+ multi(4,5);
+ mod(7,2);
+
+ return 0;
+}
+
+void add(int a,int b){
+    int c=a+b;
+    printf("add :-%d\n",c);
+}
+
+
+void Sub(int a,int b){
+    int c = a-b;
+    printf("sub :- %d\n",c);
+}
+
+
+void divid(int a,int b){
+  int c = a/b;
+    printf("divid :- %d\n",c);
+}
+void multi(int a,int b){
+   int c = a*b;
+    printf("multi :- %d\n",c);
+}
+void mod(int a,int b){
+    int c = a%b;
+    printf("mod :- %d\n",c);
+}
+----------------------------------------------------------------------------------
+#include<stdio.h>
+  void  swap(int a,int b) ;
+  void  even(int a);
+  void  maximum(int a,int b,int c);
+  void  vowel(char ch);
+  void  gender(char g);
+  void  voter(int age);
+  void  electricity(float unit);
+  void  salary(int salary,int holidays);
+  void  marksheet(int h,int e,int p,int s,int m);
+  void  keyboard(char ch);
+
+ 
+int main(){
+    
+swap(21,3) ;
+even(7);
+maximum(15,33,36);
+vowel('e');
+gender('f');
+voter(30);
+electricity(4.5);
+salary(30000,5);
+marksheet(80,80,70,80,80);
+keyboard('l');
+
+
+ return 0;
+}
+
+void swap(int a,int b){
+    a = a+b;
+    b = a-b;
+    a= a-b;
+    printf("\nswap :- %d %d",a,b);
+}
+
+
+void even(int a){
+    if(a%2==0){
+        printf("\neven number ");
+    }else {
+        printf("\nodd number ");
+    }
+}
+
+
+void maximum(int a,int b,int c){
+   if(a > b && a > c){
+       printf("\na is maximum");
+   }else if(b > c && b > a){
+       printf("\nb is muximum");
+   }else{
+       printf("\nc is muximum");
+   }
+}
+void vowel(char ch){
+    if(ch=='a' || ch =='e' || ch =='i' || ch =='o' || ch=='u'){
+        printf("\nvowel");
+    }else{
+        printf("\nconsonate");
+    }
+   
+}
+void gender(char g){
+   if(g =='m' ){
+       printf("\nmale");
+   }else {
+       printf("\nfemale");
+   }
+}
+
+void voter(int age){
+    
+    if(age>=18){
+        printf("\nyou can give votes");
+    }else{
+        printf("\nyour not give votes");
+    }
+    
+}
+
+void electricity(float unit){
+    if(unit>=1 && unit <=10){
+        int totalAmout = unit*10;
+        printf("\n%d",totalAmout);
+    }else if(unit >=11 && unit <=20){
+        int totalAmout = unit*15;
+        printf("\n%d",totalAmout);
+    }else if(unit >=20 ){
+        int totalAmout = unit*20;
+        printf("\n%d",totalAmout);
+    }else {
+        printf(" \nno connection  .....");
+    }
+    
+}
+void salary(int salary,int holidays){
+  if(holidays==1)
+    {
+        printf("\nFull Salary");
+    }
+    else if(holidays>=2 && holidays<=5)
+       {
+           salary=(salary*0.95);
+           printf("\nRemaining salary:" "%d",salary);
+       }  
+       else if(holidays>=5 && holidays<=14)
+       {
+           salary=(salary*0.90);
+           printf("\nRemaining salary:" "%d",salary);
+       }
+       else if(holidays==15)
+       {
+           salary=(salary*0.50);
+           printf("\nRemaining salary:" "%d",salary);
+       }  
+       else{
+           printf("\nNot Salary");
+       }
+}
+void marksheet(int h,int e,int p,int s,int m){
+    int totalNumber = ((h + e+ p + s  + m)/500)*100;
+  
+   if(totalNumber < 25 ){
+    printf("\nGrade : F");
+   }else if( totalNumber > 25 && totalNumber < 45){
+    printf("\nGrade : E");
+   }else if (totalNumber > 45 && totalNumber < 50){
+    printf("\nGrade : D"); 
+   }else if (totalNumber > 50 && totalNumber < 60){
+    printf("\nGrade : C");
+   }else if (totalNumber > 60 && totalNumber < 80){
+    printf("\nGrade : B");
+   }else if (totalNumber > 80){
+    printf("\nGrade : A \n ");
+   }else{
+    printf("\nResult not found !");
+   }
+}
+
+
+void keyboard(char ch){
+  	if(ch=='a' || ch =='s' || ch =='d' || ch =='f' || ch =='g' || ch =='h' || ch =='j' || ch =='k' || ch =='l' ){
+  		printf("\n midle line");
+
+  	}else if(ch=='z' || ch =='x' || ch =='c' || ch =='v' || ch =='b' || ch =='n' || ch =='m'){
+  		printf("\n lower line ");
+
+  	}
+  	
+  	else{
+  		printf("upper line");
+  	}
+}
+
+----------------------------------------------------------------------------------
+
+#include<stdio.h>
+void    Armstrong(int a)    ;
+void   reversenumber(int a);
+void   palindrome(int a)   ;
+void  	sumofdigit(int a);
+void  	count(int a)   ;
+void  	factorial(int a);
+void 	Fibonacci(int n)    ;
+void    sum(int s);  
+void  	neon(int a)    ;
+
+ 
+ int main(){
+     char ch ;
+     printf("enter the character: ");
+     scanf("%c",&ch);
+     if(ch =='a'){
+       Armstrong(153) ;  
+     }else if(ch =='r'){
+             reversenumber(12345);
+
+     }else if (ch =='p'){
+             palindrome(123454321)   ;
+
+     }else if(ch =='s'){
+         sumofdigit(1234);
+     }else if (ch =='c'){
+         	count(12356)   ;
+     }
+     else if (ch =='f'){
+         factorial(5);
+     }else if (ch =='b'){
+        Fibonacci(7)    ; 
+     }else if(ch=='y'){
+         sum(345);
+     }
+         else if (ch=='n'){
+        neon(9)    ; 
+     }else {
+         printf("input is invail please try again");
+     }
+     return 0;
+ }
+ 
+ 
+ void  Armstrong(int a)   {
+     int sum= 0;
+     int rem ;
+     int temp = a;
+     while (a>0){
+         rem = a%10;
+         sum = sum +rem *rem *rem;
+         a = a/10;
+     }
+     if(temp==sum){
+         printf("Armstrong number");
+     }else{
+         printf("number not Armstrong");
+     }
+     
+ }
+ void   reversenumber(int a){
+     int sum = 0;
+     int rem;
+    
+     while(a>0){
+         rem = a%10;
+         sum = sum*10+rem;
+         a=a/10;
+         
+     }
+     printf("%d",sum);
+     
+ }
+ void   palindrome(int a)  {
+     int sum = 0;
+     int rem;
+     int temp = a;
+    
+     while(a>0){
+         rem = a%10;
+         sum = sum*10+rem;
+         a=a/10;
+         
+     }
+    if(temp == sum){
+        printf("palindrome number");
+    }else{
+        printf("not palindrome number");
+    }
+     
+     
+ }
+void	sumofdigit(int a){
+  int sum=0;
+  int rem;
+while(a>0){
+	    rem=a%10;
+     	sum =sum+rem;
+     	a=a/10;
+	}
+	a++;
+		printf("%d",sum);
+
+}
+void	count(int a)  {
+    int count=0;
+    while(a>0){
+        a=a/10;
+        count++;
+    }
+    
+}
+
+void	factorial(int a) {
+    int fact=1;
+	for(int i =1; i<=a; i++){
+		fact = fact*i;
+	}
+	printf("%d",fact);
+		
+    
+}
+void	Fibonacci (int n){
+     int n1 =0,n2=1,n3;
+    printf("%d %d ",n1,n2);
+    for(int i = 2; i<=n;i++){
+    n3= n1+n2;
+    printf("%d ",n3);
+    n1= n2;
+    n2=n3;
+    }
+    
+}
+void   sum(int s){
+    int sum =0;
+    int rem;
+   while(s>0)
+   {
+       if(s%2==0){
+           sum=sum+s;
+       }
+           s--;
+    
+   }
+    printf("%d",sum);
+}
+void neon(int a){
+	int squar = a*a;
+	int temp = squar;
+	int sum =0;
+    int rem;
+	while(temp>0){
+		rem = temp%10;
+		sum = sum+rem ;
+		temp=temp/10;
+	}
+     if(sum==a){
+     	printf("neon number");
+     }else{
+     	printf("not neon number");
+     }
+}
+------------------------------------------------------------------------------
+        /*RETURN AND NO ARGUMENT*/
+
+#include<stdio.h>
+int  add();
+int  Sub();
+int  divid();
+int  multi();
+int  mod();
+int main(){
+ printf("%d\n",add());
+ printf("%d\n",Sub());
+ printf("%d\n",divid());
+ printf("%d\n",multi());
+ printf("%d\n",mod());
+ return 0;
+}
+
+int add(){
+    int a=14,b=6;
+    int c=a+b;
+    printf("addion is :- ");
+    return a;
+}
+
+
+int Sub(){
+    int a=4,b=2;
+    int c = a-b;
+        printf("Sub is :- ");
+
+    return c;
+}
+
+
+ int divid(){
+     int a=16,b=2;
+  int c = a/b;
+      printf("divid is :- ");
+
+    return c;
+}
+ int multi(){
+     int a=4,b=4;
+   int c = a*b;
+       printf("multi is :- ");
+
+    return c;
+}
+ int mod(){
+     int a=11,b=2;
+    int c = a%b;
+        printf("mod is :- ");
+
+   return c;
+}
+-------------------------------------------------------------------------------------
+#include<stdio.h>
+
+int swap();
+int even();
+int maximum();
+char vowel();
+char gender();
+int voter();
+int electricity();
+int salary();
+int marksheet();
+char keyboard();
+
+int main() {
+    printf("\n%d\n", swap());
+    printf("\n%d\n", even());
+    printf("\n%d\n", maximum());
+    printf("\n%c\n", vowel());
+    printf("\n%c\n", gender());
+    printf("\n%d\n", voter());
+    printf("\n%d\n", electricity());
+    printf("\n%d\n", salary());
+    printf("\n%d\n", marksheet());
+    printf("\n%c\n", keyboard());
+
+    return 0;
+}
+
+int swap() {
+    int a = 2, b = 4;
+    a = a + b;
+    b = a - b;
+    a = a - b;
+    printf("swap: %d %d", a, b);
+    return 0;
+}
+
+int even() {
+    printf("\n");
+    int a = 13;
+    if (a % 2 == 0) {
+        printf("Even number");
+    } else {
+        printf("Odd number");
+    }
+    return 0;
+}
+
+int maximum() {
+    printf("\n");
+    int a = 12, b = 3, c = 23;
+    if (a > b && a > c) {
+        printf("a is maximum");
+    } else if (b > c) {
+        printf("b is maximum");
+    } else {
+        printf("c is maximum");
+    }
+    return 0;
+}
+
+char vowel() {
+    printf("\n");
+    char ch = 'g';
+    if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
+        printf("vowel");
+        return 'V';
+    } else {
+        printf("consonant");
+        return 'C';
+    }
+}
+
+char gender() {
+    printf("\n");
+    char g = 'm';
+    if (g == 'm') {
+        printf("Male");
+        return 'M';
+    } else {
+        printf("Female");
+        return 'F';
+    }
+}
+
+int voter() {
+    printf("\n");
+    int age = 45;
+    if (age >= 18) {
+        printf("You can vote");
+        return 1;
+    } else {
+        printf("You cannot vote");
+        return 0;
+    }
+}
+
+int electricity() {
+    printf("\n");
+    float unit = 4.5;
+    int totalAmount;
+    
+    if (unit >= 1 && unit <= 10) {
+        totalAmount = unit * 10;
+    } else if (unit >= 11 && unit <= 20) {
+        totalAmount = unit * 15;
+    } else if (unit > 20) {
+        totalAmount = unit * 20;
+    } else {
+        printf("No connection...");
+        return 0;
+    }
+    
+    printf("%d", totalAmount);
+    return totalAmount;
+}
+
+int salary() {
+    printf("\n");
+    int salary = 30000, holidays = 5;
+    if (holidays == 1) {
+        printf("Full Salary");
+    } else if (holidays >= 2 && holidays <= 5) {
+        salary = salary * 0.95;
+    } else if (holidays >= 6 && holidays <= 14) {
+        salary = salary * 0.90;
+    } else if (holidays == 15) {
+        salary = salary * 0.50;
+    } else {
+        printf("No Salary");
+        return 0;
+    }
+    
+    printf(" Remaining salary: %d", salary);
+    return salary;
+}
+
+int marksheet() {
+    printf("\n");
+    int h = 80, e = 80, p = 80, s = 80, m = 89;
+    int totalNumber = ((h + e + p + s + m) * 100) / 500;
+    
+    if (totalNumber < 25) {
+        printf("Grade: F");
+    } else if (totalNumber < 45) {
+        printf("Grade: E");
+    } else if (totalNumber < 50) {
+        printf("Grade: D");
+    } else if (totalNumber < 60) {
+        printf("Grade: C");
+    } else if (totalNumber < 80) {
+        printf("Grade: B");
+    } else {
+        printf("Grade: A");
+    }
+    
+    return totalNumber;
+}
+
+char keyboard() {
+    printf("\n");
+    char ch = 'u';
+    if (ch == 'a' || ch == 's' || ch == 'd' || ch == 'f' || ch == 'g' || ch == 'h' || ch == 'j' || ch == 'k' || ch == 'l') {
+        printf("Middle line");
+        return 'M';
+    } else if (ch == 'z' || ch == 'x' || ch == 'c' || ch == 'v' || ch == 'b' || ch == 'n' || ch == 'm') {
+        printf("Lower line");
+        return 'L';
+    } else {
+        printf("Upper line");
+        return 'U';
+    }
+}
+-------------------------------------------------------------------------------------
+#include<stdio.h>
+int     Armstrong()    ;
+int    reversenumber();
+int    palindrome()   ;
+int   	sumofdigit();
+int   	count()   ;
+int   	factorial();
+int  	Fibonacci()    ;
+int     sum();  
+int   	neon()    ;
+
+ // function declaration 
+ int main(){
+     char ch ;
+     printf("enter the character: ");
+     scanf("%c",&ch);
+     if(ch =='a'){
+       Armstrong() ;  
+     }else if(ch =='b'){
+             reversenumber();
+
+     }else if (ch =='c'){
+             palindrome()   ;
+
+     }else if(ch =='d'){
+         sumofdigit();
+     }else if (ch =='c'){
+         	count()   ;
+     }
+     else if (ch =='e'){
+         factorial();
+     }else if (ch =='f'){
+        Fibonacci()    ; 
+     }else if(ch=='g'){
+         sum();
+     }
+         else if (ch=='h'){
+        neon()    ; 
+     }else {
+         printf("input is invail please try again");
+     }
+     return 0;
+ }
+ 
+ 
+ int Armstrong()   {
+     int a=153;
+     int sum= 0;
+     int rem ;
+     int temp = a;
+     while (a>0){
+         rem = a%10;
+         sum = sum +rem *rem *rem;
+         a = a/10;
+     }
+     if(temp==sum){
+         printf("Armstrong number");
+     }else{
+         printf("number not Armstrong");
+     
+         return 0;
+     }
+     
+ }
+ int reversenumber(){
+     int a=88656;
+     int sum = 0;
+     int rem;
+    
+     while(a>0){
+         rem = a%10;
+         sum = sum*10+rem;
+         a=a/10;
+         
+     }
+     printf("%d",sum);
+     return 0;
+ }
+int  palindrome()  {
+    int a=123454321;
+     int sum = 0;
+     int rem;
+     int temp = a;
+    
+     while(a>0){
+         rem = a%10;
+         sum = sum*10+rem;
+         a=a/10;
+         
+     }
+    if(temp == sum){
+        printf("palindrome number");
+    }else{
+        printf("not palindrome number");
+    return 0;
+    }
+     
+     
+ }
+int sumofdigit(){
+    int a=61263;
+  int sum=0;
+  int rem;
+while(a>0){
+	    rem=a%10;
+     	sum =sum+rem;
+     	a=a/10;
+	}
+	a++;
+		printf("%d",sum);
+		return 0;
+
+}
+  int count()  {
+      int a=74856;
+    int count=0;
+    while(a>0){
+        a=a/10;
+        count++;
+    }
+    return 0;
+    
+}
+
+int factorial() {
+    int a=8;
+    int fact=1;
+	for(int i =1; i<=a; i++){
+		fact = fact*i;
+	}
+	printf("%d",fact);
+	return 0;	
+    
+}
+int	Fibonacci (){
+    int n=9;
+     int n1 =0,n2=1,n3;
+    printf("%d %d ",n1,n2);
+    for(int i = 2; i<=n;i++){
+    n3= n1+n2;
+    printf("%d ",n3);
+    n1= n2;
+    n2=n3;
+    }
+    return 0;
+    
+}
+int sum(){
+    int s=100;
+    int sum =0;
+    int rem;
+   while(s>0)
+   {
+       if(s%2==0){
+           sum=sum+s;
+       }
+           s--;
+    
+   }
+    printf("%d",sum);
+    return 0;
+}
+int neon(){
+    int a=9;
+	int squar = a*a;
+	int temp = squar;
+	int sum =0;
+    int rem;
+	while(temp>0){
+		rem = temp%10;
+		sum = sum+rem ;
+		temp=temp/10;
+	}
+     if(sum==a){
+     	printf("neon number");
+     }else{
+     	printf("not neon number");
+     }
+     return 0;
+}
+-----------------------------------------------------------------------------------------
+       /*RETURN AND ARGUMENT*/
+
+#include<stdio.h>
+int add(int a,int b);
+int Sub(int a,int b);
+int divid(int a,int b);
+int multi(int a,int b);
+int mod(int a,int b);
+ 
+int main(){
+ printf("%d\n",add(32,4));
+ printf("%d\n",Sub(5,2));
+ printf("%d\n",divid(6,2));
+ printf("%d\n",multi(4,5));
+ printf("%d\n",mod(5,2));
+
+ return 0;
+}
+
+int add(int a,int b){
+    printf("\n");
+    int c=a+b;
+    printf("add");
+    return c;
+}
+
+
+int Sub(int a,int b){
+    printf("\n");
+    int c = a-b;
+    printf("sub");
+     return c;
+}
+
+int divid(int a,int b){
+      printf("\n");
+  int c = a/b;
+    printf("divid");
+    return c;
+}
+int multi(int a,int b){
+    printf("\n");
+   int c = a*b;
+    printf("multi");
+    return c;
+}
+int mod(int a,int b){
+    printf("\n");
+    int c = a%b;
+    printf("mod");
+    return c;
+}
+-----------------------------------------------------
+#include<stdio.h>
+  int  swap(int a,int b) ;
+  int  even(int a);
+  int  maximum(int a,int b,int c);
+  char vowel(char ch);
+  char  gender(char g);
+  int   voter(int age);
+  float electricity(float unit);
+  int  salary(int salary,int holidays);
+  int  marksheet(int h,int e,int p,int s,int m);
+  char  keyboard(char ch);
+
+ 
+int main(){
+    
+printf("%d\n",swap(4,3));
+printf("%d\n",even(7));
+printf("%d\n",maximum(5,3,6));
+printf("%c\n",vowel('e'));
+printf("%c\n",gender('f'));
+printf("%d\n",voter(30));
+printf("%f\n",electricity(4.5));
+printf("%d\n",salary(30000,5));
+printf("%d\n",marksheet(80,80,70,80,80));
+printf("%c\n",keyboard('l'));
+
+
+ return 0;
+}
+
+int swap(int a,int b){
+    a = a+b;
+    b = a-b;
+    a= a-b;
+    printf("\nswap :- %d %d",a,b);
+    printf("\n");
+    return 0;
+}
+
+
+int even(int a){
+    if(a%2==0){
+        printf("\neven number ");
+    }else {
+        printf("\nodd number ");
+    }
+    printf("\n");
+    return 0;
+}
+
+
+int maximum(int a,int b,int c){
+   if(a > b && a > c){
+       printf("\na is maximum");
+   }else if(b > c && b > a){
+       printf("\nb is muximum");
+   }else{
+       printf("\nc is muximum");
+   }
+   printf("\n");
+   return 0;
+}
+char vowel(char ch){
+    if(ch=='a' || ch =='e' || ch =='i' || ch =='o' || ch=='u'){
+        printf("\nvowel");
+    }
+    else{
+        printf("\nconsonant");
+    }
+    printf("\n");
+    return 'c';
+   
+}
+char gender(char g){
+   if(g =='m' ){
+       printf("\nmale");
+   }
+ 
+   else {
+       printf("\nfemale");
+   }
+   printf("\n");
+   return 'f';
+}
+
+int  voter(int age){
+    
+    if(age>=18){
+        printf("\nyou can give votes");
+    }
+    else{
+        printf("\nyour not give votes");
+    }
+    printf("\n");
+    return 0;
+    
+}
+
+float electricity(float unit){
+    if(unit>=1 && unit <=10){
+        int totalAmout = unit*10;
+        printf("\n%d",totalAmout);
+    }else if(unit >=11 && unit <=20){
+        int totalAmout = unit*15;
+        printf("\n%d",totalAmout);
+    }else if(unit >=20 ){
+        int totalAmout = unit*20;
+        printf("\n%d",totalAmout);
+    }else {
+        printf(" \nno connection  .....");
+    }
+    printf("\n");
+    return 0;
+    
+}
+int salary(int salary,int holidays){
+  if(holidays==1)
+    {
+        printf("\nFull Salary");
+    }
+    else if(holidays>=2 && holidays<=5)
+       {
+           salary=(salary*0.95);
+           printf("\nRemaining salary:" "%d",salary);
+       }  
+       else if(holidays>=5 && holidays<=14)
+       {
+           salary=(salary*0.90);
+           printf("\nRemaining salary:" "%d",salary);
+       }
+       else if(holidays==15)
+       {
+           salary=(salary*0.50);
+           printf("\nRemaining salary:" "%d",salary);
+       }  
+       else{
+           printf("\nNot Salary");
+       }
+       printf("\n");
+       return 0;
+}
+int marksheet(int h,int e,int p,int s,int m){
+    int totalNumber = ((h + e+ p + s  + m)/500)*100;
+  
+   if(totalNumber < 25 ){
+    printf("\nGrade : F");
+   }else if( totalNumber > 25 && totalNumber < 45){
+    printf("\nGrade : E");
+   }else if (totalNumber > 45 && totalNumber < 50){
+    printf("\nGrade : D"); 
+   }else if (totalNumber > 50 && totalNumber < 60){
+    printf("\nGrade : C");
+   }else if (totalNumber > 60 && totalNumber < 80){
+    printf("\nGrade : B");
+   }else if (totalNumber > 80){
+    printf("\nGrade : A \n ");
+   }else{
+    printf("\nResult not found !");
+   }
+   printf("\n");
+   return 0;
+}
+
+
+char keyboard(char ch){
+  	if(ch=='a' || ch =='s' || ch =='d' || ch =='f' || ch =='g' || ch =='h' || ch =='j' || ch =='k' || ch =='l' ){
+  		printf("\n midle line");
+
+  	}
+  
+  	else if(ch=='z' || ch =='x' || ch =='c' || ch =='v' || ch =='b' || ch =='n' || ch =='m'){
+  		printf("\n lower line ");
+
+  	}
+  	
+  	else{
+  		printf("upper line");
+  	}
+  	printf("\n");
+  	return 'u';
+}
+--------------------------------------------------------------------------------------------------------------
+#include<stdio.h>
+int    Armstrong(int a)    ;
+int   reversenumber(int a);
+int   palindrome(int a)   ;
+int  	sumofdigit(int a);
+int  	count(int a)   ;
+int  	factorial(int a);
+int 	Fibonacci(int n)    ;
+int    sum(int s);  
+int  	neon(int a)    ;
+
+ // function declaration 
+ int main(){
+     char ch ;
+     printf("enter the character: ");
+     scanf("%c",&ch);
+     if(ch =='a'){
+       Armstrong(153) ;  
+     }else if(ch =='b'){
+             reversenumber(12345);
+
+     }else if (ch =='c'){
+             palindrome(123)   ;
+
+     }else if(ch =='d'){
+         sumofdigit(1234);
+     }else if (ch =='e'){
+         	count(12356)   ;
+     }
+     else if (ch =='f'){
+         factorial(5);
+     }else if (ch =='g'){
+        Fibonacci(7)    ; 
+     }else if(ch=='h'){
+         sum(345);
+     }
+         else if (ch=='i'){
+        neon(9)    ; 
+     }else {
+         printf("input is invalid");
+     }
+     return 0;
+ }
+ 
+ 
+int Armstrong(int a)   {
+     int sum= 0;
+     int rem ;
+     int temp = a;
+     while (a>0){
+         rem = a%10;
+         sum = sum +rem *rem *rem;
+         a = a/10;
+     }
+     if(temp==sum){
+         printf("Armstrong number");
+     }else{
+         printf("number not Armstrong");
+     }
+      return 0;
+     
+ }
+ int   reversenumber(int a){
+     int sum = 0;
+     int rem;
+    
+     while(a>0){
+         rem = a%10;
+         sum = sum*10+rem;
+         a=a/10;
+         
+     }
+     printf("%d",sum);
+     
+ }
+ int   palindrome(int a)  {
+     int sum = 0;
+     int rem;
+     int temp = a;
+    
+     while(a>0){
+         rem = a%10;
+         sum = sum*10+rem;
+         a=a/10;
+         
+     }
+    if(temp == sum){
+        printf("palindrome number");
+    }else{
+        printf("not palindrome number");
+    }
+      return 0;
+     
+ }
+int	sumofdigit(int a){
+  int sum=0;
+  int rem;
+while(a>0){
+	    rem=a%10;
+     	sum =sum+rem;
+     	a=a/10;
+	}
+	a++;
+		printf("%d",sum);
+ return 0;
+}
+int  count(int a)  {
+    int count=0;
+    while(a>0){
+        a=a/10;
+        count++;
+    }
+     return 0;
+}
+
+int	factorial(int a) {
+    int fact=1;
+	for(int i =1; i<=a; i++){
+		fact = fact*i;
+	}
+	printf("%d",fact);
+		
+     return 0;
+}
+int	Fibonacci (int n){
+     int n1 =0,n2=1,n3;
+    printf("%d %d ",n1,n2);
+    for(int i = 2; i<=n;i++){
+    n3= n1+n2;
+    printf("%d ",n3);
+    n1= n2;
+    n2=n3;
+    }
+     return 0;
+}
+int sum(int s){
+    int sum =0;
+    int rem;
+   while(s>0)
+   {
+       if(s%2==0){
+           sum=sum+s;
+       }
+           s--;
+    
+   }
+    printf("%d",sum);
+     return 0;
+}
+int neon(int a){
+	int squar = a*a;
+	int temp = squar;
+	int sum =0;
+    int rem;
+	while(temp>0){
+		rem = temp%10;
+		sum = sum+rem ;
+		temp=temp/10;
+	}
+     if(sum==a){
+     	printf("neon number");
+     }else{
+     	printf("not neon number");
+     }
+      return 0;
+}
+
+
+
